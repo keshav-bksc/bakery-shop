@@ -1,0 +1,68 @@
+.cake {
+  background-color: pink;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cake:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -20px;
+  transform: scale(1.03);
+  transition: 400ms linear;
+}
+
+.cake img {
+  width: 100%;
+}
+
+.cake h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.cake button {
+  width: 40%;
+  background-color: #FCFCFD;
+  align-items: center;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px;
+  cursor: pointer;
+  height: 2.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.cake button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px;
+  transform: translateY(2px);
+}
+
+.cake .remove {
+  background-color: #FF4742;
+  color: white;
+  width: 50%;
+}
+
+@media (max-width: 720px) {
+  .cake .remove {
+    width: 65%;
+  }
+}
+
+@media (max-width: 420px) {
+  .cake button {
+    width: 50%;
+  }
+} 
+
+@media (max-width: 360px) {
+  .cake .remove {
+    width: 50%;
+  }
+}
